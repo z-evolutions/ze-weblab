@@ -239,3 +239,126 @@ Die Browser-Kompatibilitätsdaten, die WHATWG-Seiten teilweise aus MDN einblende
 - Die `meta`-`name`-Werte werden als Unterbestand des `meta`-Features geprüft; standardisierte, andere und ggf. historische/konforme Zustände müssen getrennt behandelt werden.
 - Die `http-equiv`-Zustände von `meta` benötigen eine eigene Status-/Konformitätsmatrix, weil WHATWG hier ausdrücklich auch nicht-konforme Zustände aufführt.
 - Accessibility und Browser-Kompatibilität werden nicht aus diesem ersten Durchlauf abschließend bewertet.
+
+
+## Detailprüfung – §4.3 Sections
+
+**WHATWG-Quelle:** HTML Living Standard, §4.3 „Sections“, Fassung vom 11. August 2026. citeturn0view0
+
+### Inventar
+
+| Feature | WHATWG-Abschnitt | Content Categories | Kontext | Content Model | Tag Omission | Content Attributes | Sanitization | DOM Interface |
+|---|---|---|---|---|---|---|---|---|
+| `body` | 4.3.1 | None | Zweites Element in `html` | Flow content | Start- und Endtag unter definierten Bedingungen optional | Global + Window-reflecting event-handler content attributes | Default | `HTMLBodyElement` |
+| `article` | 4.3.2 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `section` | 4.3.3 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `nav` | 4.3.4 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `aside` | 4.3.5 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `h1`–`h6` | 4.3.6 | Flow, Heading, Palpable | In `hgroup` oder wo Heading Content erwartet wird | Phrasing content | Keine Auslassung | Global | Default | `HTMLHeadingElement` |
+| `hgroup` | 4.3.7 | Flow, Heading, Palpable | Wo Heading Content erwartet wird | Bestimmte Folge aus `p` + genau einem `h1`–`h6` + optionalen `p`/script-supporting elements | Keine Auslassung | Global | Default | `HTMLElement` |
+| `header` | 4.3.8 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content, aber keine `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+| `footer` | 4.3.9 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content, aber keine `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+| `address` | 4.3.10 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content ohne Heading-, Sectioning-, `header`-, `footer`- oder `address`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+
+Die Angaben zu `body`, `article`, `section`, `nav`, `aside`, den Überschriften, `hgroup`, `header`, `footer` und `address` sind direkt aus den jeweiligen WHATWG-Elementdefinitionen entnommen. citeturn0view0turn1view0turn1view1turn2view0turn2view1turn1view2
+
+### Fachliche Sonderfeststellungen
+
+#### `body`
+
+`body` ist kein gewöhnliches Sectioning-Element. WHATWG führt es mit keiner Content Category und als zweites Element innerhalb von `html`; sein Content Model ist Flow Content. Zusätzlich besitzt `body` eine Reihe von Window-reflecting Event-Handler-Content-Attributes. WHATWG weist außerdem ausdrücklich darauf hin, dass in konformen Dokumenten nur ein `body`-Element existiert. citeturn0view0
+
+**Für die Matrix:** Event-Handler-Content-Attributes werden nicht als gewöhnliche elementbezogene Attribute übersehen, sondern als eigene Beziehung zum späteren Attributinventar dokumentiert.
+
+#### `article`
+
+`article` ist gleichzeitig Flow Content, Sectioning Content und Palpable Content. Es repräsentiert eine in sich geschlossene, grundsätzlich unabhängig verteil- oder wiederverwendbare Komposition. Verschachtelte `article`-Elemente stehen laut WHATWG in einer Beziehung zum äußeren Artikel. citeturn0view0
+
+**Querverweise:** `section`, `header`, `footer`, `address`, Microdata.
+
+#### `section`
+
+`section` ist Sectioning Content und dient einer thematischen Gruppierung. WHATWG grenzt es ausdrücklich vom generischen Container `div` ab: `section` soll nicht lediglich aus Styling- oder Scripting-Gründen verwendet werden. citeturn0view0
+
+**Querverweise:** `article`, Überschriften, Heading/Outline-Konzept.
+
+#### `nav`
+
+`nav` bezeichnet einen Abschnitt mit Navigationslinks. WHATWG stellt ausdrücklich klar, dass nicht jede Linkgruppe in `nav` gehört; vorgesehen ist es primär für wichtige Navigationsblöcke. Es muss außerdem nicht zwingend eine Liste enthalten. citeturn0view0turn1view0
+
+**Querverweise:** `a`, `footer`, Accessibility.
+
+#### `aside`
+
+`aside` bezeichnet einen Abschnitt, dessen Inhalt tangential mit dem umgebenden Inhalt zusammenhängt und als davon getrennt betrachtet werden kann. WHATWG grenzt es ausdrücklich von bloßen Parenthesen ab. citeturn1view0
+
+#### `h1`–`h6`
+
+WHATWG behandelt die sechs Überschriftselemente gemeinsam. Ihr jeweiliger Heading Level entspricht der Zahl im Elementnamen. Die Semantik wird im Abschnitt „Headings and outlines“ weiter definiert. citeturn1view1
+
+**Wichtiger Querverweis:** `4.3.11 Headings and outlines` muss deshalb als eigenständiges fachliches Konzept in unserer Matrix erfasst werden; es ist kein zusätzliches HTML-Element.
+
+#### `hgroup`
+
+`hgroup` gruppiert eine Überschrift mit zugehörigem Inhalt. Das aktuelle Content Model ist präzise strukturiert: null oder mehr `p`, danach genau ein `h1`–`h6`, danach null oder mehr `p`, optional mit Script-supporting Elements dazwischen. citeturn2view0
+
+Das ist ein gutes Beispiel dafür, warum die Matrix nicht nur „Content Model = Flow Content“ speichern darf.
+
+#### `header`
+
+`header` repräsentiert eine Gruppe einleitender oder navigationaler Hilfen. Es ist **kein Sectioning Content** und erzeugt keine eigene Section. Sein Content Model schließt `header` und `footer` als Nachfahren aus. citeturn2view0turn2view1
+
+Die Accessibility-Betrachtung hängt laut WHATWG davon ab, ob sich das `header` innerhalb von Sectioning Content befindet. Diese Information muss deshalb als kontextabhängige Information erhalten bleiben. citeturn2view1
+
+#### `footer`
+
+`footer` repräsentiert die Fußzeile seines nächsten Sectioning-Content-Vorfahren bzw. der Seite, wenn kein solcher Vorfahr existiert. Auch `footer` ist selbst kein Sectioning Content und erzeugt keine eigene Section. citeturn1view2
+
+#### `address`
+
+`address` ist **nicht** das allgemeine HTML-Element für beliebige Postadressen. WHATWG definiert es für Kontaktinformationen zum nächsten `article`- oder `body`-Vorfahren. Außerdem darf sein Inhalt keine Heading-, Sectioning-, `header`-, `footer`- oder weiteren `address`-Nachfahren enthalten. citeturn1view2
+
+### Neue Querschnittserkenntnis: Sections und Outline
+
+§4.3 enthält neben den zehn Elementdefinitionen auch:
+
+- 4.3.11 Headings and outlines
+  - Heading levels & offsets
+  - Sample outlines
+  - Exposing outlines to users
+- 4.3.12 Usage summary
+  - Article or section?
+
+Diese Punkte sind **keine zusätzlichen Tags**, aber für die HTML-Referenz fachlich relevant. Sie müssen deshalb als Konzept-/Verarbeitungsinformationen separat erfasst werden. citeturn0view0
+
+### Status / V1
+
+Alle zehn Elementfamilien dieses Blocks werden für die V1-Referenz aufgenommen.
+
+Die WHATWG-Seite zeigt daneben Browser-Support-Informationen aus MDN. Diese Angaben werden **nicht als WHATWG-Status** übernommen. Browserkompatibilität bleibt eine getrennte Rechercheebene. citeturn0view0
+
+### Matrix-Anpassung
+
+Keine neue Spalte erforderlich.
+
+Der Block bestätigt aber, dass folgende vorhandene Felder zwingend benötigt werden:
+
+- Content Categories
+- Context
+- Content Model
+- Tag Omission
+- Content Attributes
+- Accessibility
+- DOM Interface
+- Querverweise
+- normative Sonderregeln
+
+Zusätzlich wird `Heading/Outline` als eigene **Konzept-/Querverweisfamilie** vorgemerkt.
+
+### Offene Punkte
+
+- `Heading levels & offsets` vollständig separat erfassen.
+- `Sample outlines` und `Exposing outlines to users` fachlich prüfen.
+- `Article or section?` als redaktionell relevante, aber standardbasierte Entscheidungshilfe erfassen.
+- Die globalen Attribute und die Window-reflecting Event-Handler-Content-Attributes werden erst im separaten Attributinventar vollständig aufgelöst.
+- Accessibility-Informationen werden später anhand der von WHATWG verlinkten maßgeblichen Accessibility-Spezifikationen vertieft.
