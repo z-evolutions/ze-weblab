@@ -2,142 +2,144 @@
 
 ## Arbeitsstand
 
-Erste WHATWG-basierte Inventarstufe: HTML-Elemente.
+WHATWG-basierte Inventar- und Detailprüfungsstufe: HTML-Elemente, aktuell bis einschließlich §4.4 „Grouping content“.
 
-**Primärquelle:** WHATWG HTML Living Standard.
+**Primärquelle:** WHATWG HTML Living Standard / Edition for Web Developers.
 
-**Quellenstand der Recherche:** 11. August 2026 (Angabe im WHATWG-Standard).
+**Rechercheabschluss dieses Arbeitsstands:** 16. August 2026.  
+**Für die hier ausgewertete WHATWG-Edition ausgewiesener Stand:** 11. August 2026.
 
 Diese Datei ist ein fachliches Arbeits- und Qualitätssicherungsartefakt. Sie ist keine Kopie der WHATWG-Spezifikation.
 
 ## Methodik
 
 - Zuerst wird das Inventar der in WHATWG §4 definierten HTML-Elemente erfasst.
-- Ein Element kann im Standard an mehreren Stellen thematisch vorkommen; dafür wird ein Primärbereich und ggf. ein Querverweis dokumentiert.
-- Die Einordnung als konform/obsolete/non-conforming wird nicht allein aus dem Auftreten in §4 abgeleitet. Die individuelle Statusprüfung folgt als eigener Prüfschritt.
-- V1-Zugehörigkeit folgt dem zuvor beschlossenen Referenzumfang und wird in dieser ersten Inventarstufe als vorläufig aufgenommen geführt.
+- Ein Element erhält genau eine Primär-ID. Wenn es im Standard an mehreren Stellen thematisch vorkommt, wird dies über Querverweise dokumentiert.
+- Die Einordnung als konform/obsolete/non-conforming wird nicht allein aus dem Auftreten in §4 abgeleitet. Die individuelle Statusprüfung erfolgt als eigener Prüfschritt.
+- V1-Zugehörigkeit folgt dem zuvor beschlossenen Referenzumfang und wird in dieser Inventarstufe vorläufig aufgenommen geführt.
 - Fremdsprachige Elemente aus SVG/MathML werden nicht als HTML-Elemente inventarisiert; ihre HTML-Integrationsregeln werden separat geprüft.
 - Custom Elements sind keine endliche Liste benannter HTML-Elemente und werden separat als Feature-Familie erfasst.
+- Browser-Kompatibilitätsdaten werden nicht als WHATWG-Primärstatus übernommen.
 
-## Matrix
+## Matrix – eindeutiges HTML-Elementinventar
+
+Die ursprünglich doppelt erfassten Elemente `a` und `area` werden hier nur einmal geführt. Ihre zusätzlichen Vorkommen im Standard werden als Querverweis dokumentiert.
 
 | ID | Kategorie | Feature-Typ | Feature | WHATWG-Bereich | Statussystem | Status | V1-Referenz | ZE-WebLab-Kategorie | Prüfstatus | Querverweise / Hinweise | Offene Fragen |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| HTML-ELEM-001 | HTML | Element | `html` | 4.1 The document element | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-002 | HTML | Element | `head` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-003 | HTML | Element | `title` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-004 | HTML | Element | `base` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-005 | HTML | Element | `link` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-006 | HTML | Element | `meta` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-007 | HTML | Element | `style` | 4.2 Document metadata | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-008 | HTML | Element | `body` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-009 | HTML | Element | `article` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-010 | HTML | Element | `section` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-011 | HTML | Element | `nav` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-012 | HTML | Element | `aside` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-013 | HTML | Element | `h1` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-014 | HTML | Element | `h2` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-015 | HTML | Element | `h3` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-016 | HTML | Element | `h4` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-017 | HTML | Element | `h5` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-018 | HTML | Element | `h6` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-019 | HTML | Element | `hgroup` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-020 | HTML | Element | `header` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-021 | HTML | Element | `footer` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-022 | HTML | Element | `address` | 4.3 Sections | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-023 | HTML | Element | `p` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-024 | HTML | Element | `hr` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-025 | HTML | Element | `pre` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-026 | HTML | Element | `blockquote` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-027 | HTML | Element | `ol` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-028 | HTML | Element | `ul` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-029 | HTML | Element | `menu` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-030 | HTML | Element | `li` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-031 | HTML | Element | `dl` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-032 | HTML | Element | `dt` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-033 | HTML | Element | `dd` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-034 | HTML | Element | `figure` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-035 | HTML | Element | `figcaption` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-036 | HTML | Element | `main` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-037 | HTML | Element | `search` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-038 | HTML | Element | `div` | 4.4 Grouping content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-039 | HTML | Element | `a` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend | Auch in: 4.6 Links | |
-| HTML-ELEM-040 | HTML | Element | `em` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-041 | HTML | Element | `strong` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-042 | HTML | Element | `small` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-043 | HTML | Element | `s` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-044 | HTML | Element | `cite` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-045 | HTML | Element | `q` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-046 | HTML | Element | `dfn` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-047 | HTML | Element | `abbr` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-048 | HTML | Element | `ruby` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-049 | HTML | Element | `rt` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-050 | HTML | Element | `rp` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-051 | HTML | Element | `data` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-052 | HTML | Element | `time` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-053 | HTML | Element | `code` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-054 | HTML | Element | `var` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-055 | HTML | Element | `samp` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-056 | HTML | Element | `kbd` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-057 | HTML | Element | `sub` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-058 | HTML | Element | `sup` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-059 | HTML | Element | `i` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-060 | HTML | Element | `b` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-061 | HTML | Element | `u` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-062 | HTML | Element | `mark` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-063 | HTML | Element | `bdi` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-064 | HTML | Element | `bdo` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-065 | HTML | Element | `span` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-066 | HTML | Element | `br` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-067 | HTML | Element | `wbr` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-068 | HTML | Element | `a` | 4.5 Text-level semantics | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend | Auch in: 4.6 Links | |
-| HTML-ELEM-069 | HTML | Element | `area` | 4.6 Links | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend | Auch in: 4.8 Embedded content | |
-| HTML-ELEM-070 | HTML | Element | `ins` | 4.7 Edits | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-071 | HTML | Element | `del` | 4.7 Edits | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-072 | HTML | Element | `picture` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-073 | HTML | Element | `source` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-074 | HTML | Element | `img` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-075 | HTML | Element | `iframe` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-076 | HTML | Element | `embed` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-077 | HTML | Element | `object` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-078 | HTML | Element | `video` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-079 | HTML | Element | `audio` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-080 | HTML | Element | `track` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-081 | HTML | Element | `map` | 4.8 Embedded content | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-082 | HTML | Element | `area` | 4.6 Links | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend | Auch in: 4.8 Embedded content | |
-| HTML-ELEM-083 | HTML | Element | `table` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-084 | HTML | Element | `caption` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-085 | HTML | Element | `colgroup` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-086 | HTML | Element | `col` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-087 | HTML | Element | `tbody` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-088 | HTML | Element | `thead` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-089 | HTML | Element | `tfoot` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-090 | HTML | Element | `tr` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-091 | HTML | Element | `td` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-092 | HTML | Element | `th` | 4.9 Tabular data | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-093 | HTML | Element | `form` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-094 | HTML | Element | `label` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-095 | HTML | Element | `input` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-096 | HTML | Element | `button` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-097 | HTML | Element | `select` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-098 | HTML | Element | `datalist` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-099 | HTML | Element | `optgroup` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-100 | HTML | Element | `option` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-101 | HTML | Element | `textarea` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-102 | HTML | Element | `output` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-103 | HTML | Element | `progress` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-104 | HTML | Element | `meter` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-105 | HTML | Element | `fieldset` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-106 | HTML | Element | `legend` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-107 | HTML | Element | `selectedcontent` | 4.10 Forms | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-108 | HTML | Element | `details` | 4.11 Interactive elements | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-109 | HTML | Element | `summary` | 4.11 Interactive elements | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-110 | HTML | Element | `dialog` | 4.11 Interactive elements | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-111 | HTML | Element | `script` | 4.12 Scripting | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-112 | HTML | Element | `noscript` | 4.12 Scripting | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-113 | HTML | Element | `template` | 4.12 Scripting | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-114 | HTML | Element | `slot` | 4.12 Scripting | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
-| HTML-ELEM-115 | HTML | Element | `canvas` | 4.12 Scripting | WHATWG | Individuelle Statusprüfung ausstehend | Ja (vorläufig) | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-001 | HTML | Element | `html` | 4.1 Document element | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-002 | HTML | Element | `head` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-003 | HTML | Element | `title` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-004 | HTML | Element | `base` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-005 | HTML | Element | `link` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-006 | HTML | Element | `meta` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-007 | HTML | Element | `style` | 4.2 Document metadata | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-008 | HTML | Element | `body` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-009 | HTML | Element | `article` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-010 | HTML | Element | `section` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-011 | HTML | Element | `nav` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-012 | HTML | Element | `aside` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-013 | HTML | Element | `h1` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-014 | HTML | Element | `h2` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-015 | HTML | Element | `h3` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-016 | HTML | Element | `h4` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-017 | HTML | Element | `h5` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-018 | HTML | Element | `h6` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Bestandteil der gemeinsamen `h1`–`h6`-Definition | |
+| HTML-ELEM-019 | HTML | Element | `hgroup` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-020 | HTML | Element | `header` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-021 | HTML | Element | `footer` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-022 | HTML | Element | `address` | 4.3 Sections | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-023 | HTML | Element | `p` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-024 | HTML | Element | `hr` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-025 | HTML | Element | `pre` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-026 | HTML | Element | `blockquote` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-027 | HTML | Element | `ol` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-028 | HTML | Element | `ul` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-029 | HTML | Element | `menu` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-030 | HTML | Element | `li` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-031 | HTML | Element | `dl` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-032 | HTML | Element | `dt` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-033 | HTML | Element | `dd` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-034 | HTML | Element | `figure` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-035 | HTML | Element | `figcaption` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-036 | HTML | Element | `main` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Hierarchische Zulässigkeit gesondert beachten | |
+| HTML-ELEM-037 | HTML | Element | `search` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen |  | |
+| HTML-ELEM-038 | HTML | Element | `div` | 4.4 Grouping content | WHATWG | aktuell definiert | Ja | Elemente | Detailprüfung abgeschlossen | Auch als Container für Name-Value-Gruppen in `dl` | |
+| HTML-ELEM-039 | HTML | Element | `a` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar bereinigt; Detailprüfung später | Auch §4.6 Links | |
+| HTML-ELEM-040 | HTML | Element | `em` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-041 | HTML | Element | `strong` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-042 | HTML | Element | `small` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-043 | HTML | Element | `s` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-044 | HTML | Element | `cite` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-045 | HTML | Element | `q` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-046 | HTML | Element | `dfn` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-047 | HTML | Element | `abbr` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-048 | HTML | Element | `ruby` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-049 | HTML | Element | `rt` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-050 | HTML | Element | `rp` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-051 | HTML | Element | `data` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-052 | HTML | Element | `time` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-053 | HTML | Element | `code` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-054 | HTML | Element | `var` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-055 | HTML | Element | `samp` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-056 | HTML | Element | `kbd` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-057 | HTML | Element | `sub` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-058 | HTML | Element | `sup` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-059 | HTML | Element | `i` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-060 | HTML | Element | `b` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-061 | HTML | Element | `u` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-062 | HTML | Element | `mark` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-063 | HTML | Element | `bdi` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-064 | HTML | Element | `bdo` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-065 | HTML | Element | `span` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-066 | HTML | Element | `br` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-067 | HTML | Element | `wbr` | 4.5 Text-level semantics | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-068 | HTML | Element | `area` | 4.6 Links | WHATWG | aktuell definiert | Ja | Elemente | Inventar bereinigt; Detailprüfung später | Auch §4.8 Embedded content | |
+| HTML-ELEM-069 | HTML | Element | `ins` | 4.7 Edits | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-070 | HTML | Element | `del` | 4.7 Edits | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-071 | HTML | Element | `picture` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-072 | HTML | Element | `source` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-073 | HTML | Element | `img` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-074 | HTML | Element | `iframe` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-075 | HTML | Element | `embed` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-076 | HTML | Element | `object` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-077 | HTML | Element | `video` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-078 | HTML | Element | `audio` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-079 | HTML | Element | `track` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-080 | HTML | Element | `map` | 4.8 Embedded content | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend | `area` wird nur einmal im Inventar geführt | |
+| HTML-ELEM-081 | HTML | Element | `table` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-082 | HTML | Element | `caption` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-083 | HTML | Element | `colgroup` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-084 | HTML | Element | `col` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-085 | HTML | Element | `tbody` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-086 | HTML | Element | `thead` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-087 | HTML | Element | `tfoot` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-088 | HTML | Element | `tr` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-089 | HTML | Element | `td` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-090 | HTML | Element | `th` | 4.9 Tabular data | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-091 | HTML | Element | `form` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-092 | HTML | Element | `label` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-093 | HTML | Element | `input` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-094 | HTML | Element | `button` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-095 | HTML | Element | `select` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-096 | HTML | Element | `datalist` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-097 | HTML | Element | `optgroup` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-098 | HTML | Element | `option` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-099 | HTML | Element | `textarea` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-100 | HTML | Element | `output` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-101 | HTML | Element | `progress` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-102 | HTML | Element | `meter` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-103 | HTML | Element | `fieldset` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-104 | HTML | Element | `legend` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-105 | HTML | Element | `selectedcontent` | 4.10 Forms | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-106 | HTML | Element | `details` | 4.11 Interactive elements | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-107 | HTML | Element | `summary` | 4.11 Interactive elements | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-108 | HTML | Element | `dialog` | 4.11 Interactive elements | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-109 | HTML | Element | `script` | 4.12 Scripting | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-110 | HTML | Element | `noscript` | 4.12 Scripting | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-111 | HTML | Element | `template` | 4.12 Scripting | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-112 | HTML | Element | `slot` | 4.12 Scripting | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
+| HTML-ELEM-113 | HTML | Element | `canvas` | 4.12 Scripting | WHATWG | aktuell definiert | Ja | Elemente | Inventar erfasst; Detailprüfung ausstehend |  | |
 
 ## Separate Feature-Familien innerhalb/um §4
 
@@ -149,58 +151,13 @@ Diese Datei ist ein fachliches Arbeits- und Qualitätssicherungsartefakt. Sie is
 | Elementbezogene Attribute | elementbezogene Definitionen in §4 | Eigene Attribut-Inventarliste mit Elementbeziehungen |
 | HTML/MathML/SVG-Integration | §4.8.15–4.8.16 | HTML-Integrationsregeln erfassen; vollständige MathML/SVG-Referenz nicht Teil der HTML-Elementliste |
 | APIs und Verarbeitungsmodelle | verschiedene Unterabschnitte in §4 | Separat als API-/Konzept-Features prüfen |
+| Heading / Outline | §4.3.11 | Eigenständige Konzept-/Verarbeitungsfamilie |
+| Link Types | §4.6.8 | Eigenständige Feature-Familie |
+| Meta-Namen und Pragma-Direktiven | §4.2.5.1–4.2.5.3 | Unterbestand des `meta`-Features mit eigenständiger Statusprüfung |
 
-## Nächster Prüfschritt
+## Gemeinsames Detailmodell
 
-Für jedes inventarisierte Element werden anschließend die elementbezogenen Angaben geprüft: Content Categories, erlaubter Kontext, Content Model, Tag-Omission-Regeln, Content Attributes, Accessibility/Sanitization-Hinweise, DOM Interface sowie besondere normative Regeln. Dabei wird die Konformitäts-/Statusinformation individuell gegen die aktuelle WHATWG-Definition geprüft.
-
-## Kontrollhinweis
-
-Die aktuelle WHATWG-Inhaltsübersicht zeigt §4 „The elements of HTML“ mit den Bereichen 4.1 bis 4.16. Neben den eigentlichen Elementdefinitionen enthält §4 auch APIs, Verarbeitungsmodelle, Link-Typen, Custom Elements, allgemeine Idiome und weitere normative Konzepte. Diese werden nicht fälschlich als zusätzliche benannte HTML-Tags gezählt, sondern separat erfasst.
-
-## Detailprüfung – Block 4.1–4.2
-
-### Verifizierte WHATWG-Struktur
-
-Die aktuelle WHATWG-Fassung führt unter §4.1 das `html`-Element und unter §4.2 die sieben Elemente `head`, `title`, `base`, `link`, `meta` und `style`. §4.2 enthält zusätzlich elementbezogene Verarbeitungsmodelle, z. B. für `link` und `meta`; diese werden nicht als zusätzliche Elemente gezählt, sondern als Detail-/Querverweise erfasst.
-
-### Ergebnis der Detailprüfung
-
-| Feature | Kategorie | Content Categories | Verwendungskontext | Content Model | Tag-Omission | Content Attributes | Sanitization | DOM Interface | Statusprüfung |
-|---|---|---|---|---|---|---|---|---|---|
-| `html` | Document element | None | Dokumentelement; außerdem in bestimmten Compound-Document-Kontexten | `head` gefolgt von `body` | Start- und Endtag unter definierten Bedingungen optional | Global attributes | Default | `HTMLHtmlElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `head` | Document metadata | None | Als erstes Element innerhalb von `html` | Metadata content; Bedingungen für `title`/`base` abhängig von Dokumenttyp bzw. höherem Protokoll | Start- und Endtag unter definierten Bedingungen optional | Global attributes | Default | `HTMLHeadElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `title` | Document metadata | Metadata content | In `head`, wenn kein anderes `title` vorhanden ist | Text, der nicht aus Inter-Element-Whitespace besteht | Keine Auslassung | Global attributes | Default | `HTMLTitleElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `base` | Document metadata | Metadata content | In `head`, wenn kein anderes `base` vorhanden ist | Nothing | Kein Endtag | Global attributes, `href`, `target` | Unsafe | `HTMLBaseElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `link` | Document metadata / kontextabhängig auch Flow/Phrasing | Metadata; unter definierten Bedingungen auch Flow/Phrasing | Metadata-Kontext; zusätzlich bestimmte `noscript`-/Body-Kontexte | Nothing | Kein Endtag | Global attributes plus `href`, `crossorigin`, `rel`, `media`, `integrity`, `hreflang`, `type`, `referrerpolicy`, `sizes`, `imagesrcset`, `imagesizes`, `as`, `blocking`, `color`, `disabled`, `fetchpriority`; `title` mit spezieller Bedeutung | Uncategorized | `HTMLLinkElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `meta` | Document metadata; mit `itemprop` zusätzlich Flow/Phrasing | Metadata; bei `itemprop` Flow/Phrasing | Kontext abhängig von `charset`, `http-equiv`, `name` oder `itemprop` | Nothing | Kein Endtag | Global attributes, `name`, `http-equiv`, `content`, `charset`, `media` | Uncategorized | `HTMLMetaElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-| `style` | Document metadata | Metadata content | Metadata-Kontext; zusätzlich in `head`-`noscript` | Text, der ein konformes Stylesheet darstellt | Keine Auslassung | Global attributes, `media`, `blocking`; `title` mit spezieller Bedeutung | Uncategorized | `HTMLStyleElement` | Aktuell definiert; individuelle Konformitätsprüfung abgeschlossen |
-
-### Fachliche Feststellungen
-
-1. **Die Matrix braucht `Sanitization` als eigene Spalte.** WHATWG führt diese Information ausdrücklich in Elementdefinitionen. Die ursprüngliche Matrix wird deshalb um dieses Feld ergänzt.
-
-2. **Die Matrix braucht eine Trennung zwischen `Content Attributes` und `Global Attributes`.** Bei `html`, `head` und `title` besteht die elementbezogene Attributliste nur aus globalen Attributen; bei `base`, `link`, `meta` und `style` kommen zusätzliche elementbezogene Attribute hinzu.
-
-3. **`Contexts in which this element can be used` muss erhalten bleiben**, obwohl WHATWG diese Information als nicht-normative, der Bequemlichkeit dienende Beschreibung kennzeichnet. Für eine Lern- und Referenzplattform ist sie fachlich sehr wertvoll.
-
-4. **`Content Model` ist normativ und darf nicht mit dem Verwendungskontext gleichgesetzt werden.** Beide Informationen werden getrennt geführt.
-
-5. **`Tag omission in text/html` ist ebenfalls separat zu erfassen.** WHATWG beschreibt diese Information als nicht-normative Kurzbeschreibung; die eigentlichen normativen Regeln liegen in den Syntax-/Optional-Tags-Regeln.
-
-6. **`DOM Interface` gehört in das Referenzmodell.** Es ist laut WHATWG Bestandteil der Elementdefinition und normativ.
-
-7. **`Accessibility considerations` sollte als eigene Informationsgruppe erhalten bleiben.** Die konkrete fachliche Ausarbeitung wird später unter Berücksichtigung von ARIA in HTML und HTML-AAM geprüft; WHATWG verweist hierfür auf diese externen Standards.
-
-8. **`Status` ist nicht ausreichend als einfache Ja/Nein-Spalte.** Für die Elementdefinition kann „aktuell definiert“ dokumentiert werden; Konformität einzelner Verwendungen und einzelne Attribute/States können jedoch einen anderen Status haben. Deshalb muss die Matrix Status auf Feature-Ebene und ggf. auf Attribut-/State-Ebene unterscheiden.
-
-9. **Elemente können kontextabhängige Content Categories haben.** `link` und `meta` zeigen bereits im ersten Block, dass eine einzelne statische Kategorie-Spalte nicht immer ausreicht.
-
-10. **Elementdefinition und Untermodelle müssen getrennt erfasst werden.** `link` besitzt eigene Verarbeitungsabschnitte für `media`, `type`, Ressource-Fetching, `Link`-Header, Early Hints und Hyperlink-UI. `meta` besitzt eigene Unterabschnitte für Standard-Metadaten-Namen, andere Metadaten-Namen, Pragma-Direktiven und Zeichencodierung. Diese sind keine zusätzlichen Elemente, aber eigenständige Referenz-/Querverweis-Features.
-
-### Vorläufige Modellanpassung
-
-Die Detailmatrix sollte künftig mindestens folgende Felder besitzen:
+Für jede Elementdefinition werden mindestens folgende Felder geführt:
 
 - ID
 - Bereich
@@ -225,140 +182,419 @@ Die Detailmatrix sollte künftig mindestens folgende Felder besitzen:
 - Prüfstatus
 - offene Fragen
 
-### Statusentscheidung für diesen Block
+`Contexts`, `Content Model`, `Tag Omission`, `Content Attributes`, `Accessibility`, `Sanitization` und `DOM Interface` werden bewusst getrennt geführt. WHATWG beschreibt diese Angaben als unterschiedliche Bestandteile einer Elementdefinition; insbesondere sind Content Model und Tag Omission nicht dasselbe. Accessibility verweist für Autoren auf ARIA in HTML und für Implementierer auf HTML-AAM. Sanitization beschreibt die Sanitization-Kategorie eines Elements und ggf. URL-Attribute. Der DOM Interface-Eintrag ist normativ. 
 
-Für `html`, `head`, `title`, `base`, `link`, `meta` und `style` wurde verifiziert, dass sie in der aktuellen WHATWG-HTML-Fassung als HTML-Elemente definiert sind. Für die V1-Referenz werden sie aufgenommen.
+---
 
-Die Browser-Kompatibilitätsdaten, die WHATWG-Seiten teilweise aus MDN einblenden, werden **nicht als WHATWG-Primärquellenstatus** in die Matrix übernommen. Browserunterstützung bleibt eine getrennte Informationsebene und wird später separat geprüft.
+# Detailprüfung – Block 4.1–4.2
 
-### Offene Punkte
+## Verifizierte WHATWG-Struktur
 
-- Die vollständige Liste und fachliche Klassifikation der globalen Attribute wird separat erfasst.
-- Die vollständige Liste der elementbezogenen Attribute wird separat erfasst.
-- Die `link`-Typen werden als eigene Feature-Familie geprüft.
-- Die `meta`-`name`-Werte werden als Unterbestand des `meta`-Features geprüft; standardisierte, andere und ggf. historische/konforme Zustände müssen getrennt behandelt werden.
-- Die `http-equiv`-Zustände von `meta` benötigen eine eigene Status-/Konformitätsmatrix, weil WHATWG hier ausdrücklich auch nicht-konforme Zustände aufführt.
-- Accessibility und Browser-Kompatibilität werden nicht aus diesem ersten Durchlauf abschließend bewertet.
+§4.1 enthält das `html`-Element. §4.2 enthält `head`, `title`, `base`, `link`, `meta` und `style`. Die zusätzlichen Unterabschnitte zu `link` und `meta` werden als Verarbeitungs-/Feature-Untermodelle und nicht als zusätzliche Elemente erfasst.
 
+## Ergebnis
 
-## Detailprüfung – §4.3 Sections
-
-**WHATWG-Quelle:** HTML Living Standard, §4.3 „Sections“, Fassung vom 11. August 2026. citeturn0view0
-
-### Inventar
-
-| Feature | WHATWG-Abschnitt | Content Categories | Kontext | Content Model | Tag Omission | Content Attributes | Sanitization | DOM Interface |
+| Feature | Content Categories | Verwendungskontext | Content Model | Tag Omission | Content Attributes | Sanitization | DOM Interface | Statusprüfung |
 |---|---|---|---|---|---|---|---|---|
-| `body` | 4.3.1 | None | Zweites Element in `html` | Flow content | Start- und Endtag unter definierten Bedingungen optional | Global + Window-reflecting event-handler content attributes | Default | `HTMLBodyElement` |
-| `article` | 4.3.2 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
-| `section` | 4.3.3 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
-| `nav` | 4.3.4 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
-| `aside` | 4.3.5 | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
-| `h1`–`h6` | 4.3.6 | Flow, Heading, Palpable | In `hgroup` oder wo Heading Content erwartet wird | Phrasing content | Keine Auslassung | Global | Default | `HTMLHeadingElement` |
-| `hgroup` | 4.3.7 | Flow, Heading, Palpable | Wo Heading Content erwartet wird | Bestimmte Folge aus `p` + genau einem `h1`–`h6` + optionalen `p`/script-supporting elements | Keine Auslassung | Global | Default | `HTMLElement` |
-| `header` | 4.3.8 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content, aber keine `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
-| `footer` | 4.3.9 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content, aber keine `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
-| `address` | 4.3.10 | Flow, Palpable | Wo Flow Content erwartet wird | Flow content ohne Heading-, Sectioning-, `header`-, `footer`- oder `address`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+| `html` | None | Dokumentelement | `head` gefolgt von `body` | Start- und Endtag unter definierten Bedingungen optional | Global | Default | `HTMLHtmlElement` | abgeschlossen |
+| `head` | None | Erstes Element in `html` | Metadata content | Start- und Endtag unter definierten Bedingungen optional | Global | Default | `HTMLHeadElement` | abgeschlossen |
+| `title` | Metadata | `head`, sofern kein anderes `title` vorhanden ist | Text ohne Inter-Element-Whitespace | Keine Auslassung | Global | Default | `HTMLTitleElement` | abgeschlossen |
+| `base` | Metadata | `head` | Nothing | Kein Endtag | Global + `href`, `target` | Unsafe | `HTMLBaseElement` | abgeschlossen |
+| `link` | Metadata; kontextabhängig auch Flow/Phrasing | Metadata-Kontext und bestimmte zusätzliche Kontexte | Nothing | Kein Endtag | Global + elementbezogene Link-Attribute | Uncategorized | `HTMLLinkElement` | abgeschlossen |
+| `meta` | Metadata; mit `itemprop` zusätzlich Flow/Phrasing | Kontext abhängig von `charset`, `http-equiv`, `name`, `itemprop` | Nothing | Kein Endtag | Global + `name`, `http-equiv`, `content`, `charset`, `media` | Uncategorized | `HTMLMetaElement` | abgeschlossen |
+| `style` | Metadata | Metadata-Kontext; definierte `noscript`-Sonderfälle | Stylesheet-Text | Keine Auslassung | Global + `media`, `blocking` | Uncategorized | `HTMLStyleElement` | abgeschlossen |
 
-Die Angaben zu `body`, `article`, `section`, `nav`, `aside`, den Überschriften, `hgroup`, `header`, `footer` und `address` sind direkt aus den jeweiligen WHATWG-Elementdefinitionen entnommen. citeturn0view0turn1view0turn1view1turn2view0turn2view1turn1view2
+## Fachliche Feststellungen
 
-### Fachliche Sonderfeststellungen
+1. `Sanitization` bleibt eine eigene Matrixspalte.
+2. `Global Attributes` und elementbezogene Attribute werden getrennt.
+3. `Contexts` bleibt erhalten, obwohl die Darstellung als Elementdefinition nicht dieselbe normative Rolle wie das Content Model besitzt.
+4. `Content Model` ist eine normative Beschreibung des erwarteten Inhalts.
+5. `Tag Omission` ist eine nicht-normative Kurzbeschreibung; die normativen Regeln befinden sich in den Syntaxregeln.
+6. `DOM Interface` gehört zum Referenzmodell.
+7. Accessibility wird später anhand der maßgeblichen Accessibility-Spezifikationen vertieft.
+8. Status muss auf Feature-Ebene und ggf. auf Attribut-/State-Ebene unterscheidbar bleiben.
+9. Kontextabhängige Content Categories werden ausdrücklich unterstützt.
+10. Elementdefinition und Untermodelle werden getrennt erfasst.
 
-#### `body`
+## Offene Punkte
 
-`body` ist kein gewöhnliches Sectioning-Element. WHATWG führt es mit keiner Content Category und als zweites Element innerhalb von `html`; sein Content Model ist Flow Content. Zusätzlich besitzt `body` eine Reihe von Window-reflecting Event-Handler-Content-Attributes. WHATWG weist außerdem ausdrücklich darauf hin, dass in konformen Dokumenten nur ein `body`-Element existiert. citeturn0view0
+- Vollständiges globales Attributinventar.
+- Vollständiges elementbezogenes Attributinventar.
+- `link`-Typen.
+- `meta`-Namen.
+- `meta`-`http-equiv`.
+- Accessibility-Vertiefung.
+- Browser-Kompatibilität als getrennte Informationsschicht.
 
-**Für die Matrix:** Event-Handler-Content-Attributes werden nicht als gewöhnliche elementbezogene Attribute übersehen, sondern als eigene Beziehung zum späteren Attributinventar dokumentiert.
+---
 
-#### `article`
+# Detailprüfung – §4.3 Sections
 
-`article` ist gleichzeitig Flow Content, Sectioning Content und Palpable Content. Es repräsentiert eine in sich geschlossene, grundsätzlich unabhängig verteil- oder wiederverwendbare Komposition. Verschachtelte `article`-Elemente stehen laut WHATWG in einer Beziehung zum äußeren Artikel. citeturn0view0
+## Inventar
 
-**Querverweise:** `section`, `header`, `footer`, `address`, Microdata.
+| Feature | Content Categories | Kontext | Content Model | Tag Omission | Content Attributes | Sanitization | DOM Interface |
+|---|---|---|---|---|---|---|---|
+| `body` | None | Zweites Element in `html` | Flow content | Start- und Endtag unter Bedingungen optional | Global + Window-reflecting event-handler content attributes | Default | `HTMLBodyElement` |
+| `article` | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `section` | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `nav` | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `aside` | Flow, Sectioning, Palpable | Wo Sectioning Content erwartet wird | Flow content | Keine Auslassung | Global | Default | `HTMLElement` |
+| `h1`–`h6` | Flow, Heading, Palpable | `legend`, `summary`, Flow | Phrasing content | Keine Auslassung | Global | Default | `HTMLHeadingElement` |
+| `hgroup` | Flow, Palpable | `legend`, `summary`, Flow | strukturierte Folge aus `h1`–`h6`, `p` und script-supporting elements | Keine Auslassung | Global | Default | `HTMLElement` |
+| `header` | Flow, Palpable | Flow | Flow ohne `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+| `footer` | Flow, Palpable | Flow | Flow ohne `header`-/`footer`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
+| `address` | Flow, Palpable | Flow | Flow ohne Heading-, Sectioning-, `header`-, `footer`- oder `address`-Nachfahren | Keine Auslassung | Global | Default | `HTMLElement` |
 
-#### `section`
+## Fachliche Feststellungen
 
-`section` ist Sectioning Content und dient einer thematischen Gruppierung. WHATWG grenzt es ausdrücklich vom generischen Container `div` ab: `section` soll nicht lediglich aus Styling- oder Scripting-Gründen verwendet werden. citeturn0view0
+- `body` ist kein Sectioning Content und besitzt Window-reflecting Event-Handler-Content-Attributes.
+- `article` ist Flow + Sectioning + Palpable und steht für eine eigenständige/reusable Komposition.
+- `section` ist thematische Gruppierung und nicht lediglich ein generischer Styling-Container.
+- `nav` ist für wichtige Navigationsblöcke vorgesehen; nicht jede Linkgruppe muss ein `nav` sein.
+- `aside` bezeichnet tangential verbundenen, vom Hauptinhalt abgrenzbaren Inhalt.
+- `h1`–`h6` werden als gemeinsame Elementdefinition behandelt; die Heading-Level sind ein separates Konzept.
+- `hgroup` besitzt ein strukturiertes Content Model und ist deshalb nicht mit allgemeinem Flow Content gleichzusetzen.
+- `header` und `footer` sind keine Sectioning-Elemente und erzeugen keine eigene Section.
+- `address` bezeichnet Kontaktinformationen zum nächsten `article`- bzw. `body`-Vorfahren und ist nicht das allgemeine Element für beliebige Postadressen.
 
-**Querverweise:** `article`, Überschriften, Heading/Outline-Konzept.
+## Konzeptfamilie §4.3.11 / §4.3.12
 
-#### `nav`
+Folgende Inhalte sind keine zusätzlichen Tags:
 
-`nav` bezeichnet einen Abschnitt mit Navigationslinks. WHATWG stellt ausdrücklich klar, dass nicht jede Linkgruppe in `nav` gehört; vorgesehen ist es primär für wichtige Navigationsblöcke. Es muss außerdem nicht zwingend eine Liste enthalten. citeturn0view0turn1view0
+- Heading levels & offsets
+- Sample outlines
+- Exposing outlines to users
+- Article or section?
 
-**Querverweise:** `a`, `footer`, Accessibility.
+Sie werden als eigene Konzept-/Verarbeitungsfeatures erfasst.
 
-#### `aside`
+---
 
-`aside` bezeichnet einen Abschnitt, dessen Inhalt tangential mit dem umgebenden Inhalt zusammenhängt und als davon getrennt betrachtet werden kann. WHATWG grenzt es ausdrücklich von bloßen Parenthesen ab. citeturn1view0
+# Detailprüfung – §4.4 Grouping content
 
-#### `h1`–`h6`
+**WHATWG-Struktur:** §4.4 enthält genau 16 Elementdefinitionen: `p`, `hr`, `pre`, `blockquote`, `ol`, `ul`, `menu`, `li`, `dl`, `dt`, `dd`, `figure`, `figcaption`, `main`, `search` und `div`.
 
-WHATWG behandelt die sechs Überschriftselemente gemeinsam. Ihr jeweiliger Heading Level entspricht der Zahl im Elementnamen. Die Semantik wird im Abschnitt „Headings and outlines“ weiter definiert. citeturn1view1
+## Ergebnis der Detailprüfung
 
-**Wichtiger Querverweis:** `4.3.11 Headings and outlines` muss deshalb als eigenständiges fachliches Konzept in unserer Matrix erfasst werden; es ist kein zusätzliches HTML-Element.
+| Feature | WHATWG-Abschnitt | Content Categories | Kontext | Content Model | Tag Omission | Content Attributes | Sanitization | DOM Interface | Statusprüfung |
+|---|---|---|---|---|---|---|---|---|---|
+| `p` | 4.4.1 | Flow, Palpable | Flow | Phrasing content | Starttag unter definierten Bedingungen optional; Endtag optional, wenn unmittelbar ein Element folgt, das einen neuen Absatz impliziert, oder der Elternelement-Kontext endet | Global | Default | `HTMLParagraphElement` | abgeschlossen |
+| `hr` | 4.4.2 | Flow | Flow; auch `select` | Nothing | Kein Endtag | Global | Default | `HTMLHRElement` | abgeschlossen |
+| `pre` | 4.4.3 | Flow, Palpable | Flow | Phrasing content | Keine Auslassung | Global | Default | `HTMLPreElement` | abgeschlossen |
+| `blockquote` | 4.4.4 | Flow, Palpable | Flow | Flow content | Keine Auslassung | Global + `cite` | Default | `HTMLQuoteElement` | abgeschlossen |
+| `ol` | 4.4.5 | Flow, Palpable* | Flow | `li`-Elemente und script-supporting elements | Keine Auslassung | Global + `reversed`, `start`, `type` | Default | `HTMLOListElement` | abgeschlossen |
+| `ul` | 4.4.6 | Flow, Palpable* | Flow | `li`-Elemente und script-supporting elements | Keine Auslassung | Global | Default | `HTMLUListElement` | abgeschlossen |
+| `menu` | 4.4.7 | Flow, Palpable* | Flow | `li`-Elemente und script-supporting elements | Keine Auslassung | Global | Default | `HTMLMenuElement` | abgeschlossen |
+| `li` | 4.4.8 | None | `ol`, `ul`, `menu` | Flow content | Endtag unter definierten Bedingungen optional | Global + `value` in den dafür vorgesehenen Listen-Kontexten | Default | `HTMLLIElement` | abgeschlossen |
+| `dl` | 4.4.9 | Flow, Palpable* | Flow | Name-Value-Gruppen aus `dt`/`dd`, alternativ gruppiert über `div`, plus script-supporting elements | Keine Auslassung | Global | Default | `HTMLDListElement` | abgeschlossen |
+| `dt` | 4.4.10 | None | `dl` bzw. definierte `div`-Gruppen innerhalb von `dl` | Flow content | Endtag unter definierten Bedingungen optional | Global | Default | `HTMLElement` | abgeschlossen |
+| `dd` | 4.4.11 | None | `dl` bzw. definierte `div`-Gruppen innerhalb von `dl` | Flow content | Endtag unter definierten Bedingungen optional | Global | Default | `HTMLElement` | abgeschlossen |
+| `figure` | 4.4.12 | Flow, Palpable | Flow | `figcaption` optional plus Flow content | Keine Auslassung | Global | Default | `HTMLElement` | abgeschlossen |
+| `figcaption` | 4.4.13 | None | Als Kind von `figure` | Flow content | Keine Auslassung | Global | Default | `HTMLElement` | abgeschlossen |
+| `main` | 4.4.14 | Flow, Palpable | Flow, hierarchisch korrekt | Flow content | Keine Auslassung | Global | Default | `HTMLElement` | abgeschlossen |
+| `search` | 4.4.15 | Flow, Palpable | Flow | Flow content | Keine Auslassung | Global | Default | `HTMLElement` | abgeschlossen |
+| `div` | 4.4.16 | Flow, Palpable | Flow; außerdem definierte `dl`-/Form-Control-Kontexte | Flow content | Keine Auslassung | Global | Default | `HTMLDivElement` | abgeschlossen |
 
-#### `hgroup`
+`*` Die Palpable-Zuordnung von `ol`, `ul` und `menu` ist bedingt: WHATWG berücksichtigt hierfür insbesondere das Vorhandensein mindestens eines `li`-Elements.
 
-`hgroup` gruppiert eine Überschrift mit zugehörigem Inhalt. Das aktuelle Content Model ist präzise strukturiert: null oder mehr `p`, danach genau ein `h1`–`h6`, danach null oder mehr `p`, optional mit Script-supporting Elements dazwischen. citeturn2view0
+## Fachliche Detailfeststellungen
 
-Das ist ein gutes Beispiel dafür, warum die Matrix nicht nur „Content Model = Flow Content“ speichern darf.
+### `p`
 
-#### `header`
+`p` repräsentiert einen Absatz. Sein Content Model ist Phrasing Content. Der Parser behandelt `p` besonders: Bestimmte neu beginnende Flow-Elemente führen in der HTML-Syntax zum impliziten Schließen eines offenen `p`. Das ist sowohl für die Tag-Omission-Dokumentation als auch für die Parsing-Referenz relevant.
 
-`header` repräsentiert eine Gruppe einleitender oder navigationaler Hilfen. Es ist **kein Sectioning Content** und erzeugt keine eigene Section. Sein Content Model schließt `header` und `footer` als Nachfahren aus. citeturn2view0turn2view1
+Wichtig für ZE-WebLab:
 
-Die Accessibility-Betrachtung hängt laut WHATWG davon ab, ob sich das `header` innerhalb von Sectioning Content befindet. Diese Information muss deshalb als kontextabhängige Information erhalten bleiben. citeturn2view1
+- `p` ist nicht als beliebiger Block-Container zu erklären.
+- Das Content Model ist Phrasing Content.
+- Die Parser-/Optional-Tag-Regeln werden als eigene Querverbindung zur HTML-Syntax dokumentiert.
+- Paragraphengrenzen können auch implizit durch andere Konstrukte entstehen; `p` ist die explizite Elementform.
 
-#### `footer`
+### `hr`
 
-`footer` repräsentiert die Fußzeile seines nächsten Sectioning-Content-Vorfahren bzw. der Seite, wenn kein solcher Vorfahr existiert. Auch `footer` ist selbst kein Sectioning Content und erzeugt keine eigene Section. citeturn1view2
+`hr` repräsentiert einen thematischen Umbruch bzw. thematischen Wechsel. Es hat ein leeres Content Model und daher keinen Endtag.
 
-#### `address`
+Besonderheit des aktuellen Standards: Das Element ist nicht ausschließlich im gewöhnlichen Flow-Kontext dokumentiert; die Elementübersicht weist auch `select` als möglichen Elternkontext aus. Diese Sonderregel muss in der Detailreferenz erhalten bleiben.
 
-`address` ist **nicht** das allgemeine HTML-Element für beliebige Postadressen. WHATWG definiert es für Kontaktinformationen zum nächsten `article`- oder `body`-Vorfahren. Außerdem darf sein Inhalt keine Heading-, Sectioning-, `header`-, `footer`- oder weiteren `address`-Nachfahren enthalten. citeturn1view2
+`hr` ist semantisch kein bloßes „Linien“-Element. Die visuelle Darstellung gehört zur CSS-/Rendering-Ebene.
 
-### Neue Querschnittserkenntnis: Sections und Outline
+### `pre`
 
-§4.3 enthält neben den zehn Elementdefinitionen auch:
+`pre` repräsentiert vorformatierten Text. Sein Content Model ist Phrasing Content.
 
-- 4.3.11 Headings and outlines
-  - Heading levels & offsets
-  - Sample outlines
-  - Exposing outlines to users
-- 4.3.12 Usage summary
-  - Article or section?
+Für die Referenz sind insbesondere relevant:
 
-Diese Punkte sind **keine zusätzlichen Tags**, aber für die HTML-Referenz fachlich relevant. Sie müssen deshalb als Konzept-/Verarbeitungsinformationen separat erfasst werden. citeturn0view0
+- Whitespace-/Newline-Verhalten,
+- die besondere Behandlung des ersten Newline-Zeichens im HTML-Syntaxmodell,
+- die Verbindung zur CSS-Eigenschaft `white-space`,
+- die Verwendung für Text, dessen Formatierung durch Whitespace semantisch bzw. inhaltlich relevant ist.
 
-### Status / V1
+Die Darstellung als Monospace-Block ist keine ausreichende semantische Definition des Elements.
 
-Alle zehn Elementfamilien dieses Blocks werden für die V1-Referenz aufgenommen.
+### `blockquote`
 
-Die WHATWG-Seite zeigt daneben Browser-Support-Informationen aus MDN. Diese Angaben werden **nicht als WHATWG-Status** übernommen. Browserkompatibilität bleibt eine getrennte Rechercheebene. citeturn0view0
+`blockquote` repräsentiert einen Abschnitt, der aus einer anderen Quelle zitiert wurde. Das Content Model ist Flow Content.
 
-### Matrix-Anpassung
+Das `cite`-Attribut ist ein elementbezogenes Content Attribute und enthält eine URL zur Quelle bzw. zu weiterführenden Informationen über die Quelle. Die URL-Beziehung ist getrennt vom sichtbaren Zitattext zu dokumentieren.
 
-Keine neue Spalte erforderlich.
+Für Accessibility und Semantik ist wichtig, dass ein Zitat nicht nur durch visuelle Einrückung simuliert wird.
 
-Der Block bestätigt aber, dass folgende vorhandene Felder zwingend benötigt werden:
+### `ol`
 
-- Content Categories
-- Context
-- Content Model
-- Tag Omission
-- Content Attributes
-- Accessibility
-- DOM Interface
-- Querverweise
-- normative Sonderregeln
+`ol` repräsentiert eine geordnete Liste. Das Content Model besteht aus `li`-Elementen und script-supporting elements.
 
-Zusätzlich wird `Heading/Outline` als eigene **Konzept-/Querverweisfamilie** vorgemerkt.
+Elementbezogene Attribute:
 
-### Offene Punkte
+- `reversed` – Boolean; nummeriert die Liste rückwärts.
+- `start` – legt den Startwert fest.
+- `type` – legt den Typ der Listenmarkierung fest (`1`, `a`, `A`, `i`, `I`).
 
-- `Heading levels & offsets` vollständig separat erfassen.
-- `Sample outlines` und `Exposing outlines to users` fachlich prüfen.
-- `Article or section?` als redaktionell relevante, aber standardbasierte Entscheidungshilfe erfassen.
-- Die globalen Attribute und die Window-reflecting Event-Handler-Content-Attributes werden erst im separaten Attributinventar vollständig aufgelöst.
-- Accessibility-Informationen werden später anhand der von WHATWG verlinkten maßgeblichen Accessibility-Spezifikationen vertieft.
+`ol` ist damit ein Beispiel dafür, dass die Semantik der Liste und ihre konkrete Nummerierungsdarstellung über getrennte Attribute gesteuert werden.
+
+Die Palpable-Eigenschaft ist bedingt und wird bei der Auswertung der Content Categories berücksichtigt.
+
+### `ul`
+
+`ul` repräsentiert eine ungeordnete Liste. Das Content Model besteht aus `li`-Elementen und script-supporting elements.
+
+Es besitzt außer globalen Attributen keine elementbezogenen Content Attributes.
+
+Wichtig: Die Beschränkung auf `li`-Kinder ist ein echtes Content-Model-Erfordernis und nicht lediglich eine Konvention.
+
+### `menu`
+
+`menu` repräsentiert ein Menü von Befehlen. Im aktuellen Standard ist es eng an das Listenmodell gekoppelt: Das Content Model besteht aus `li`-Elementen und script-supporting elements.
+
+Für ZE-WebLab wird `menu` deshalb nicht als bloße historische Alternative zu `ul` behandelt. Seine aktuelle Semantik und seine Rolle als Befehls-/Menücontainer werden separat dokumentiert.
+
+### `li`
+
+`li` repräsentiert ein Listenelement. Es darf nur in den vorgesehenen Listeneltern (`ol`, `ul`, `menu`) verwendet werden.
+
+Das Content Model ist Flow Content.
+
+Das `value`-Attribut ist für die entsprechenden geordneten Listenfälle relevant und definiert den ordinalen Wert des Listenelements. Es gehört deshalb in das elementbezogene Attributinventar und darf nicht mit CSS-Listenmarkern verwechselt werden.
+
+Der Endtag kann unter den normativ definierten Bedingungen weggelassen werden, insbesondere wenn unmittelbar ein weiteres `li` folgt oder der Elternelement-Kontext endet.
+
+### `dl`
+
+`dl` repräsentiert eine Association List aus Name-Value-Gruppen.
+
+Das aktuelle Content Model erlaubt:
+
+- `dt`- und `dd`-Elemente als Name-/Value-Komponenten,
+- definierte `div`-Gruppierungen von Name-Value-Gruppen,
+- script-supporting elements.
+
+Damit ist `dl` nicht auf klassische Glossare beschränkt. Für die Referenz sollte der Begriff „Name-Value-Gruppe“ verwendet werden.
+
+Die Palpable-Eigenschaft ist bedingt: Sie hängt davon ab, ob mindestens eine Name-Value-Gruppe vorhanden ist.
+
+### `dt`
+
+`dt` repräsentiert die Bezeichnung bzw. den Namen einer zugehörigen `dd`-Gruppe.
+
+Es besitzt keine eigene Content Category und wird innerhalb der vorgesehenen `dl`-Strukturen verwendet.
+
+Das Content Model ist Flow Content. Die zulässige Struktur und die mögliche Tag-Omission sind zusammen mit `dl` und `dd` zu dokumentieren, weil isolierte Einzelregeln sonst leicht missverstanden werden.
+
+### `dd`
+
+`dd` repräsentiert den Inhalt zur zugehörigen `dt`-Bezeichnung bzw. den Value-Teil einer Name-Value-Gruppe.
+
+Es besitzt keine eigene Content Category und hat Flow Content als Content Model.
+
+Wie bei `dt` ist die Tag-Omission kontextabhängig. Die Regeln werden zusammen mit dem `dl`-Modell und der HTML-Parserlogik dokumentiert.
+
+### `figure`
+
+`figure` repräsentiert eine eigenständige Komposition bzw. einen Inhalt, der als Einheit referenziert werden kann. Es kann optional eine `figcaption` enthalten.
+
+Das Content Model ist Flow Content mit der Bedingung, dass eine `figcaption` höchstens einmal und in der vorgesehenen Position vorkommt.
+
+Typische Beispiele sind:
+
+- Abbildungen,
+- Diagramme,
+- Codebeispiele,
+- Tabellen,
+- andere eigenständige Inhalte mit optionaler Beschriftung.
+
+Die Semantik hängt nicht von der visuellen Darstellung als „Bildrahmen“ ab.
+
+### `figcaption`
+
+`figcaption` ist die Beschriftung einer `figure`.
+
+Es darf ausschließlich im dafür vorgesehenen `figure`-Kontext verwendet werden.
+
+Das Content Model ist Flow Content. Es besitzt keine eigene Content Category.
+
+Für ZE-WebLab ist die Beziehung `figure` ↔ `figcaption` als strukturelle Beziehung zu modellieren, nicht lediglich als Styling- oder Textbeziehung.
+
+### `main`
+
+`main` repräsentiert den dominanten Inhalt eines Dokuments.
+
+Es gehört zu Flow Content und Palpable Content. Sein Content Model ist Flow Content.
+
+Wesentlich ist die hierarchische Zulässigkeit: WHATWG definiert Bedingungen dafür, wann ein `main`-Element als hierarchisch korrekt gilt. Deshalb darf die Referenz nicht nur „Hauptinhalt der Seite“ schreiben, sondern muss die hierarchische/semantische Einschränkung als normative Sonderregel dokumentieren.
+
+`main` ist außerdem ein Beispiel für eine kontextabhängige Content Category: Es wird als Flow Content geführt, wenn es sich um ein hierarchisch korrektes `main` handelt.
+
+### `search`
+
+`search` repräsentiert einen Container für Suchsteuerelemente.
+
+Es gehört zu Flow Content und Palpable Content und besitzt Flow Content als Content Model. Es hat keine eigenen elementbezogenen Attribute über die globalen Attribute hinaus.
+
+Wichtig für die Referenz:
+
+- `search` ist ein semantischer Container.
+- Es ist nicht auf eine bestimmte visuelle Suchfeld-Darstellung beschränkt.
+- Die konkreten Form Controls innerhalb des Containers werden über die Forms-Spezifikation erfasst.
+
+### `div`
+
+`div` ist der generische Flow-Container.
+
+Es gehört zu Flow Content und Palpable Content und hat Flow Content als Content Model.
+
+Der aktuelle Standard weist `div` außerdem als zulässigen strukturellen Bestandteil bestimmter `dl`-Name-Value-Gruppen sowie bestimmter Form-Control-Kontexte aus.
+
+Für die redaktionelle Referenz ist besonders wichtig:
+
+- `div` hat keine eigene fachliche Semantik über seine generische Containerfunktion hinaus.
+- Es soll nicht anstelle eines semantisch passenden Elements verwendet werden, wenn ein solches vorhanden ist.
+- Styling- oder Scripting-Gründe allein erzeugen keine neue Semantik.
+- `div` darf nicht mit `span` verwechselt werden: Beide sind generische Container, unterscheiden sich aber in ihren Content-/Kontextregeln und im Renderingmodell.
+
+---
+
+## Querschnittserkenntnisse aus §4.4
+
+### 1. Listen bilden ein zusammenhängendes Modell
+
+Die Elemente `ol`, `ul`, `menu` und `li` müssen als zusammengehörige Feature-Familie modelliert werden.
+
+Insbesondere:
+
+- `ol` → geordnete Liste
+- `ul` → ungeordnete Liste
+- `menu` → Menü von Befehlen
+- `li` → Listenelement
+
+Die Einschränkung, dass Listen im Content Model nur die vorgesehenen `li`-Kinder sowie script-supporting elements enthalten, ist normativ und muss in der Referenz sichtbar sein.
+
+### 2. `dl`, `dt`, `dd` bilden ebenfalls eine geschlossene Struktur
+
+Die drei Elemente dürfen nicht als drei unabhängige Tags erklärt werden.
+
+Das Datenmodell ist:
+
+`dl` → Name-Value-Gruppen  
+`dt` → Name/Bezeichnung  
+`dd` → Value/Inhalt
+
+Die aktuelle WHATWG-Fassung erlaubt zusätzlich definierte `div`-Gruppierungen innerhalb von `dl`.
+
+### 3. `p` benötigt eine eigene Parsing-Querverbindung
+
+`p` besitzt besondere implizite Schließungsregeln. Deshalb muss die Referenz:
+
+- Elementdefinition,
+- Tag Omission,
+- HTML-Syntax,
+- Parsing-Verarbeitung
+
+miteinander verknüpfen.
+
+### 4. Content Categories sind teilweise bedingt
+
+`ol`, `ul`, `menu` und `dl` zeigen, dass Palpable Content nicht immer als unbedingte Eigenschaft eines Elementtyps behandelt werden kann.
+
+Ebenso ist `main` als Flow Content an seine hierarchische Korrektheit gekoppelt.
+
+Damit bestätigt §4.4 die bereits in §4.2 und §4.3 gewonnene Erkenntnis:
+
+> Eine einzelne statische Kategorie-Spalte reicht fachlich nicht aus; Bedingungen und Ausnahmen müssen modellierbar sein.
+
+### 5. Semantik und Rendering bleiben getrennt
+
+`hr`, `pre`, `blockquote`, `figure`, `div` und `menu` zeigen besonders deutlich, dass die visuelle Standarddarstellung nicht die Semantik des Elements definiert.
+
+Die Rendering-Regeln werden daher als separate Ebene behandelt.
+
+### 6. `figure` und `figcaption` sind strukturell gekoppelt
+
+Die Beziehung zwischen Abbildung/Komposition und Beschriftung wird als eigene strukturelle Beziehung erfasst.
+
+### 7. `main` und `search` gehören in die semantische Referenz
+
+Beide Elemente sind keine bloßen Styling-Container. Ihre Bedeutung liegt in der semantischen Beschreibung der Dokumentstruktur bzw. des Suchbereichs.
+
+---
+
+## Statusentscheidung für §4.4
+
+Alle 16 Elementdefinitionen des Abschnitts §4.4 sind in der ausgewerteten aktuellen WHATWG-Fassung definiert und werden für die V1-Referenz aufgenommen.
+
+Die Browser-Support-Informationen, die in der WHATWG-Webdarstellung teilweise aus MDN eingeblendet werden, werden nicht als WHATWG-Status übernommen.
+
+## Offene Punkte nach §4.4
+
+- Vollständige Attributdefinitionen und Zustände von `ol`, `li` und `blockquote` im separaten Attributinventar.
+- Vollständige Parsing-/Optional-Tag-Matrix für `p`, `li`, `dt`, `dd` und die weiteren Elemente mit Tag-Omission-Regeln.
+- Accessibility-Vertiefung anhand ARIA in HTML und HTML-AAM.
+- Sanitization-Detailprüfung auf Attributebene.
+- Rendering-Regeln bleiben eine separate Informationsebene.
+- `dl`-Struktur und `div`-Gruppierung als eigene Lern-/Validierungsregeln modellieren.
+- `main`-Hierarchieregeln als eigene Prüfregel erfassen.
+- `menu`-Semantik und Beziehung zu Befehlen/Interaktion separat vertiefen.
+
+---
+
+# Kontrollstand
+
+## Inventar
+
+Der bisherige Arbeitsstand enthält die eindeutige HTML-Elementliste ohne doppelte IDs für Elemente, die in mehreren WHATWG-Bereichen vorkommen.
+
+**Korrektur gegenüber dem vorherigen Stand:**
+
+- `a` wird nicht mehr doppelt inventarisiert.
+- `area` wird nicht mehr doppelt inventarisiert.
+- Mehrfachvorkommen im Standard werden als Querverweis dokumentiert.
+
+## Detailprüfungen abgeschlossen
+
+- §4.1 The document element
+- §4.2 Document metadata
+- §4.3 Sections
+- §4.4 Grouping content
+
+## Noch nicht detailgeprüft
+
+- §4.5 Text-level semantics
+- §4.6 Links
+- §4.7 Edits
+- §4.8 Embedded content
+- §4.9 Tabular data
+- §4.10 Forms
+- §4.11 Interactive elements
+- §4.12 Scripting
+- §4.13 Custom elements
+- weitere Konzepte und Unterabschnitte von §4
+
+## Quellen
+
+Primärquelle:
+
+- WHATWG HTML Living Standard: https://html.spec.whatwg.org/
+- WHATWG Edition for Web Developers / Index: https://html.spec.whatwg.org/dev/indices.html
+- WHATWG HTML Standard – Abschnitt §4: https://html.spec.whatwg.org/multipage/index.html
+- WHATWG HTML Syntax / Optional Tags: https://html.spec.whatwg.org/multipage/syntax.html
+
+Für die aktuelle Prüfung wurden ausschließlich WHATWG-Quellen als Primärquellen verwendet. MDN-/Browser-Support-Informationen wurden nicht als normativer Status in die Matrix übernommen.
